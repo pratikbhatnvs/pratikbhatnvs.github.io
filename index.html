@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soul Canvas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            position: relative;
+            overflow: hidden;
+        }
+        header h1 {
+            font-family: 'Times New Roman', Times, serif;
+            animation: slide 5s linear infinite;
+            white-space: nowrap; /* Prevent wrapping of text */
+            overflow: hidden;
+            display: inline-block;
+            position: relative;
+        }
+        
+        @keyframes scroll {
+            from {
+                transform: translateX(100%);
+            }
+            to {
+                transform: translateX(-100%);
+            }
+        }
+        #container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+        #bio {
+            max-width: 600px;
+            margin-bottom: 20px;
+            text-align: left;
+        }
+        #bio img {
+            max-width: 220px; 
+            height: auto;
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+        #bio p {
+            margin-bottom: 10px;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+        #books {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .book {
+            margin: 10px;
+            text-align: center;
+        }
+        .book img {
+            max-width: 170px;
+            height: auto;
+        }
+        .book p {
+            font-size: 14px;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>SOUL CANVAS</h1>
+    </header>
+    <main id="container">
+        <section id="bio">
+            <h2>Dr. Pratik Bhat</h2>
+            <img src="pratik.jpeg" alt="Portrait of Dr. Pratik Bhat">
+            <p>Introducing Dr. Pratik Bhat, a dedicated healer and a passionate poet. With a background in medicine, including an MBBS and an MD in Pathology, Dr. Bhat serves as a Consultant Pathologist at Goa Medical College, where his expertise shines brightly.</p>
+            <p>Beyond the corridors of the hospital, Dr. Bhat is affectionately known as "The Dark Poet" among his close circle. When he's not immersed in the world of medicine or crafting verses, Dr. Bhat finds solace in the pages of books and the exploration of new places. His journey reminds us that even amidst the rigors of science, there exists a poetic soul yearning to express the intricacies of the human experience.</p>
+            <p>Contact Dr. Bhat via email: <a href="mailto:pratikbhatnvs@gmail.com">pratikbhatnvs@gmail.com</a></p>
+        </section>
+        <section id="books">
+            <div class="book">
+                <a href="https://amzn.in/d/1eD1NGq" target="_blank">
+                    <img src="book1.jpeg" alt="Cover of DO I GET TO MAKE YOU MINE?">
+                </a>
+                <p>DO I GET TO MAKE YOU MINE?</p>
+            </div>
+            <div class="book">
+                <a href="https://amzn.in/d/8qHcAqE" target="_blank">
+                    <img src="book2.jpeg" alt="Cover of WILL YOU CHEAT ON ME BABY?">
+                </a>
+                <p>WILL YOU CHEAT ON ME BABY?</p>
+            </div>
+            
+            <div class="book">
+                <a href="https://amzn.in/d/3Lh4afu" target="_blank">
+                    <img src="book4.jpg" alt="Cover of You Shattered My Soul!">
+                </a>
+                <p>YOU SHATTERED MY SOUL!</p>
+            </div>
+            <div class="book">
+                <a href="https://amzn.in/d/a97xu1y" target="_blank">
+                    <img src="book5.jpg" alt="Cover of DARKER THAN BLACK-I">
+                </a>
+                <p>DARKER THAN BLACK-I</p>
+            </div>
+            <div class="book">
+                <a href="https://amzn.in/d/dLDcw0P" target="_blank">
+                    <img src="book6.jpg" alt="Cover of DARKER THAN BLACK-II">
+                </a>
+                <p>DARKER THAN BLACK-II</p>
+            </div>
+            <div class="book">
+                <a href="https://amzn.in/d/62GGy2w" target="_blank">
+                    <img src="book7.jpg" alt="Cover of DARKER THAN BLACK-III: BOOK OF MISERY">
+                </a>
+                <p>DARKER THAN BLACK-III: BOOK OF MISERY</p>
+            </div>
+            <div class="book">
+                <a href="https://amzn.in/d/cgeDFkS" target="_blank">
+                    <img src="book3.jpg" alt="Cover of The Deteriorated">
+                </a>
+                <p>THE DETERIORATED</p>
+            </div>
+        </section>
+    </main>
+    <script>
+        // Add interactivity here if needed
+    </script>
+</body>
+</html>
