@@ -1,172 +1,261 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Dark Poet</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            text-align: center;
-        }
-        header {
-            background-color: #333;
-            color: #fff;
-            padding: 20px 0;
-            position: relative;
-            overflow: hidden;
-        }
-        header h1 {
-            font-family: 'Times New Roman', Times, serif;
-            animation: slide 5s linear infinite;
-            white-space: nowrap; /* Prevent wrapping of text */
-            overflow: hidden;
-            display: inline-block;
-            position: relative;
-        }
-        
-        @keyframes scroll {
-            from {
-                transform: translateX(100%);
-            }
-            to {
-                transform: translateX(-100%);
-            }
-        }
-        #container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            padding: 20px;
-        }
-        #bio {
-            max-width: 600px;
-            margin-bottom: 20px;
-            text-align: left;
-        }
-        #bio img {
-            max-width: 220px; 
-            height: auto;
-            border-radius: 50%;
-            margin-bottom: 20px;
-        }
-        #bio p {
-            margin-bottom: 10px;
-            font-size: 16px;
-            line-height: 1.6;
-        }
-        #books {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-        .book {
-            margin: 15px;
-            text-align: center;
-            width: 220px;
-        }
-        .book img {
-            max-width: 170px;
-            height: auto;
-        }
-        .book p {
-            font-size: 14px;
-            margin-top: 5px;
-        }
-    </style>
-</head>
-<body>
-    <header>
-        <h1>The Dark Poet</h1>
-    </header>
-    <main id="container">
-        <section id="bio">
-            <h2>Dr. Pratik Bhat</h2>
-            <img src="pratik1.jpeg" alt="Portrait of Dr. Pratik Bhat">
-            <p>Dr. Pratik Bhat, MD, is a pathologist, novelist, and poet whose dark and evocative works explore the complexities of love, loss, betrayal, and the deeper layers of human emotion. His writing is known for its psychological intensity, emotional honesty, and unflinching portrayal of flawed relationships and inner turmoil. Among his published works are Will You Cheat On Me, Baby?, Do I Get to Make You Mine?, The Case of a Fragile Mind, the Darker Than Black series, You Shattered My Soul!, The Dark Is When I Love, The Deteriorated, and Dr. Bhat’s Book on Immunohistochemistry for Everyday Pathologists. </p>
-            <p>Beyond his literary and medical pursuits, Dr. Bhat is an avid walker and a devoted coffee enthusiast, often found reading, reflecting, or working on his next book.</p>
-            <p>Contact Dr. Bhat via email: <a href="mailto:pratikbhatnvs@gmail.com">pratikbhatnvs@gmail.com</a></p>
-        </section>
-        <section id="books">
-            <div class="book">
-                <a href="https://www.amazon.in/Bhats-Book-Immunohistochemistry-Everyday-Pathologists-ebook/dp/B0FFH7CQLX" target="_blank">
-                    <img src="ihc.jpg" alt="Dr. Bhat’s Book on Immunohistochemistry for Everyday Pathologists">
-                </a>
-                <p>Dr. Bhat’s Book on Immunohistochemistry for Everyday Pathologists</p>
-            </div>
-            <div class="book">
-                <a href="https://amzn.in/d/1eD1NGq" target="_blank">
-                    <img src="book1.jpeg" alt="Cover of DO I GET TO MAKE YOU MINE?">
-                </a>
-                <p>DO I GET TO MAKE YOU MINE?</p>
-            </div>
-            
-            <div class="book">
-                <a href="https://www.amazon.in/Case-Fragile-Mind-Pratik-Bhat/dp/9363553558?s=bazaar" target="_blank">
-                    <img src="case_of_fragile.jpg" alt="The Case of a Fragile Mind">
-                </a>
-                <p>The Case of a Fragile Mind</p>
-            </div>
-            
-            <div class="book">
-                <a href="https://amzn.in/d/8qHcAqE" target="_blank">
-                    <img src="book2.jpeg" alt="Cover of WILL YOU CHEAT ON ME BABY?">
-                </a>
-                <p>WILL YOU CHEAT ON ME BABY?</p>
-            </div>
-            
-            <div class="book">
-                <a href="https://www.amazon.in/lies-dr-pratik-bhat-ebook/dp/B0FFHGT6XS" target="_blank">
-                    <img src="lies.jpg" alt="Lies">
-                </a>
-                <p>Lies</p>
-            </div>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Dark Poet | Dr. Pratik Bhat</title>
 
-            <div class="book">
-                <a href="https://www.amazon.in/Dark-When-I-Love/dp/9363314928" target="_blank">
-                    <img src="dark_is_when_i_love.jpg" alt="The Dark Is When I Love">
-                </a>
-                <p>Lies</p>
-            </div>
-            
-            <div class="book">
-                <a href="https://amzn.in/d/3Lh4afu" target="_blank">
-                    <img src="book4.jpg" alt="Cover of You Shattered My Soul!">
-                </a>
-                <p>YOU SHATTERED MY SOUL!</p>
-            </div>
-            <div class="book">
-                <a href="https://amzn.in/d/a97xu1y" target="_blank">
-                    <img src="book5.jpg" alt="Cover of DARKER THAN BLACK-I">
-                </a>
-                <p>DARKER THAN BLACK-I</p>
-            </div>
-            
-            <div class="book">
-                <a href="https://amzn.in/d/dLDcw0P" target="_blank">
-                    <img src="book6.jpg" alt="Cover of DARKER THAN BLACK-II">
-                </a>
-                <p>DARKER THAN BLACK-II</p>
-            </div>
-            
-            <div class="book">
-                <a href="https://amzn.in/d/62GGy2w" target="_blank">
-                    <img src="book7.jpg" alt="Cover of DARKER THAN BLACK-III: BOOK OF MISERY">
-                </a>
-                <p>DARKER THAN BLACK-III: BOOK OF MISERY</p>
-            </div>
-            <div class="book">
-                <a href="https://amzn.in/d/cgeDFkS" target="_blank">
-                    <img src="book3.jpg" alt="Cover of The Deteriorated">
-                </a>
-                <p>THE DETERIORATED</p>
-            </div>
-        </section>
-    </main>
-    <script>
-        // Add interactivity here if needed
-    </script>
+<style>
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #0f0f0f;
+    color: #f5f5f5;
+}
+
+/* Header */
+header {
+    background: #000;
+    padding: 30px 0;
+    text-align: center;
+    border-bottom: 1px solid #333;
+}
+
+header h1 {
+    font-family: 'Times New Roman', serif;
+    font-size: 36px;
+    letter-spacing: 2px;
+    margin: 0;
+}
+
+header p {
+    margin-top: 8px;
+    color: #aaa;
+}
+
+/* Container */
+#container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 40px 20px;
+}
+
+/* Bio Section */
+#bio {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+#bio img {
+    width: 220px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    border: 3px solid #444;
+}
+
+#bio h2 {
+    font-family: 'Times New Roman', serif;
+    margin-bottom: 15px;
+}
+
+#bio p {
+    max-width: 700px;
+    margin: 10px auto;
+    line-height: 1.7;
+    color: #ccc;
+}
+
+#bio a {
+    color: #fff;
+    text-decoration: none;
+    border-bottom: 1px solid #555;
+}
+
+#bio a:hover {
+    color: #ddd;
+}
+
+/* Books Section */
+#books {
+    text-align: center;
+}
+
+#books h2 {
+    font-family: 'Times New Roman', serif;
+    margin-bottom: 30px;
+}
+
+.books-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 35px;
+}
+
+.book {
+    width: 200px;
+    background: #1a1a1a;
+    padding: 15px;
+    border-radius: 6px;
+    transition: 0.3s ease;
+}
+
+.book:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.6);
+}
+
+.book img {
+    width: 160px;
+    height: auto;
+}
+
+.book p {
+    margin: 12px 0 8px;
+    font-size: 14px;
+    color: #ddd;
+}
+
+/* Buy Button */
+.buy-btn {
+    display: inline-block;
+    padding: 8px 14px;
+    background: #b8860b;
+    color: #000;
+    font-weight: bold;
+    font-size: 13px;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.buy-btn:hover {
+    background: #d4af37;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    border-top: 1px solid #333;
+    color: #777;
+    margin-top: 60px;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>The Dark Poet</h1>
+    <p>Dr. Pratik Bhat | Pathologist & Author</p>
+</header>
+
+<main id="container">
+
+<section id="bio">
+    <img src="pratik1.jpeg" alt="Dr. Pratik Bhat">
+    <h2>About Dr. Pratik Bhat</h2>
+
+    <p>
+        Dr. Pratik Bhat is an MD Pathologist and published novelist based in Goa, India. 
+        While professionally trained in hematology, cytopathology, histopathology and laboratory medicine, 
+        he is equally known for his emotionally intense and psychologically layered storytelling.
+    </p>
+
+    <p>
+        His literary works explore love, betrayal, darkness, vulnerability, and the fragile 
+        complexity of human relationships — themes that have earned him a growing readership.
+    </p>
+
+    <p>
+        Contact: 
+        <a href="mailto:pratikbhatnvs@gmail.com">pratikbhatnvs@gmail.com</a>
+    </p>
+</section>
+
+<section id="books">
+    <h2>Books</h2>
+
+    <div class="books-grid">
+
+        <div class="book">
+            <img src="ihc.jpg" alt="Immunohistochemistry Book">
+            <p>Dr. Bhat’s Book on Immunohistochemistry</p>
+            <a href="https://www.amazon.in/Bhats-Book-Immunohistochemistry-Everyday-Pathologists-ebook/dp/B0FFH7CQLX" target="_blank" class="buy-btn">Buy Now</a>
+        </div>
+
+        <div class="book">
+            <img src="book1.jpeg">
+            <p>Do I Get To Make You Mine?</p>
+            <a href="https://amzn.in/d/1eD1NGq" target="_blank" class="buy-btn">Buy Now</a>
+        </div>
+
+        <div class="book">
+            <img src="book2.jpeg">
+            <p>Will You Cheat On Me, Baby?</p>
+            <a href="https://amzn.in/d/8qHcAqE" target="_blank" class="buy-btn">Buy Now</a>
+        </div>
+
+        <div class="book">
+            <img src="case_of_fragile.jpg">
+            <p>The Case of Fragile Mind</p>
+            <a href="https://www.amazon.in/Case-Fragile-Mind-Pratik-Bhat/dp/9363553558?s=bazaar" target="_blank" class="buy-btn">Buy Now</a>
+        </div>
+
+        <div class="book">
+            <img src="lies.jpg">
+            <p>Lies</p>
+            <a href="https://www.amazon.in/lies-dr-pratik-bhat-ebook/dp/B0FFHGT6XS" target="_blank" class="buy-btn">Buy Now</a>
+        </div>
+
+        <div class="book">
+            <img src="dark_is_when_i_love.jpg">
+            <p>The Dark Is When I Love</p>
+            <a href="https://www.amazon.in/Dark-When-I-Love/dp/9363314928" target="_blank" class="buy-btn">Buy Now</a>
+        </div>
+
+        <div class="book">
+            <img src="book4.jpg">
+            <p>You Shattered My Soul!</p>
+            <a href="https://amzn.in/d/3Lh4afu" target="_blank" class="buy-btn">Buy Now</a>
+        </div>
+
+        <div class="book">
+            <img src="book5.jpg">
+            <p>Darker Than Black I</p>
+            <a href="https://amzn.in/d/a97xu1y" target="_blank" class="buy-btn">Buy Now</a>
+        </div>
+
+        <div class="book">
+            <img src="book6.jpg">
+            <p>Darker Than Black II</p>
+            <a href="https://amzn.in/d/dLDcw0P" target="_blank" class="buy-btn">Buy Now</a>
+        </div>
+
+        <div class="book">
+            <img src="book7.jpg">
+            <p>Darker Than Black III: Book of Misery</p>
+            <a href="https://amzn.in/d/62GGy2w" target="_blank" class="buy-btn">Buy Now</a>
+        </div>
+
+        <div class="book">
+            <img src="book3.jpg">
+            <p>The Deteriorated</p>
+            <a href="https://amzn.in/d/cgeDFkS" target="_blank" class="buy-btn">Buy Now</a>
+        </div>
+
+    </div>
+</section>
+
+</main>
+
+<footer>
+© 2026 Dr. Pratik Bhat | Margao, Goa, India
+</footer>
+
 </body>
 </html>
